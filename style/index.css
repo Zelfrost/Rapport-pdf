@@ -1,0 +1,351 @@
+html, body, #body {
+    height: 100%;
+    margin: 0;
+}
+
+#first-page hr {
+    height: 0;
+    margin: 0;
+    border: 0 none;
+
+    opacity: 0;
+
+    clear: both;
+}
+
+#body {
+    position: relative;
+
+    margin: 0 auto;
+    width: 200mm;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+
+
+.page {
+    position: relative;
+    min-height: calc(100% - 20mm);
+
+    padding-bottom: 20mm;
+}
+
+.numerotation {
+    position: absolute;
+    bottom: 5mm;
+    right: 0;
+
+    padding: 4px 12px;
+    line-height: 9pt;
+    vertical-align: top;
+
+    color: #FFF;
+    background-color: #428BCA;
+
+    border-radius: 50%;
+}
+.numerotation span {
+    display: inline-block;
+    width: 100%;
+
+    font-size: 9pt;
+    text-align: center;
+}
+.numerotation span:first-child {
+    padding-bottom: 1px;
+}
+.numerotation div.sep {
+    height: 1px;
+    background-color: #FFF;
+}
+
+.exposant {
+    display: inline-block;
+    margin-left: 2px;
+
+    vertical-align: top;
+    font-size: 0.7em;
+    font-weight: normal;
+
+    color: #428BCA;
+}
+.glossaire {
+    position: absolute;
+    bottom: 5mm;
+
+    width: 200mm;
+
+    font-size: 0.8em;
+    color: #333;
+
+}
+.glossaire ul {
+    margin: 0;
+}
+.glossaire li {
+    display: block;
+}
+.glossaire .id {
+    margin-right: 5px;
+    color: #428BCA;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+h1 {
+    display: block;
+    width: 60%;
+
+    text-align: right;
+    color: #428BCA;
+
+    margin-top: 80px;
+
+    border-bottom: 3px solid #428BCA;
+}
+.page h1:first-child {
+    margin-top: 0;
+}
+#first-page h1 {
+    width: 100%;
+    text-align: center;
+
+    border: 0 none;
+}
+
+h2 {
+    width: 50%;
+    margin: 0;
+    margin-top: 20px;
+
+    text-align: right;
+    color: #D1A378;
+
+    border-bottom: 1px solid #D1A378;
+}
+h1 + h2 {
+    margin: 0;
+    margin-top: 10px;
+}
+#first-page h2 {
+    width: 100%;
+    text-align: left;
+
+    color: #428BCA;
+    border: 0 none;
+}
+
+h3 {
+    width: 40%;
+    text-align: right;
+
+    color: #84603F;
+    border-bottom: 1px solid #84603F;
+}
+
+h4 {
+    position: relative;
+    width: 30%;
+}
+
+h4 hr {
+    position: absolute;
+    float: left;
+    top: 3px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #555;
+    border: 0 none;
+}
+
+h4 span {
+    position: relative;
+
+    margin: 0 auto;
+    padding: 0 5px;
+
+    color: #555;
+    background-color: #FFF;
+}
+
+small {
+    color: #777;
+
+    font-size: 0.7em;
+    font-weight: 400;
+}
+h1 small {
+    display: block;
+}
+h2 small {
+    position: relative;
+    top: -1.7em;
+
+    display: block;
+
+    text-align: right;
+    font-size: 0.5em;
+}
+
+
+
+a {
+    color: #428BCA;
+    text-decoration: none;
+}
+#sommaire a {
+    color: #2F3E4A;
+    text-decoration: none;
+}
+
+
+
+.absolute {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+}
+
+
+
+.top {
+    top: 0;
+}
+
+
+
+.middle {
+    top: calc(50% - 170px);
+}
+
+.middle .img {
+    width: 480px;
+    margin: 0 auto;
+}
+.middle img {
+    float: left;
+    padding: 20px;
+}
+
+
+
+.bottom {
+    bottom: 0;
+}
+#first-page .bottom {
+    bottom: 20mm;
+}
+
+.bottom .img img {
+    height: 60px;
+}
+.bottom .img img:first-child {
+    float: left;
+}
+.bottom .img img:last-child {
+    float: right;
+}
+
+.bottom .left {
+    float: left;
+    margin-top: 15px;
+}
+.bottom .right {
+    float: right;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.bottom > div p:first-child {
+    color: #285E8E;
+    font-weight: 700;
+}
+.bottom p {
+    margin: 0;
+    color: #428BCA;
+}
+
+p {
+    text-align: justify;
+}
+p:first-letter {
+    margin-left: 45px;
+}
+
+#sommaire, #sommaire ul li {
+    list-style-type: none;
+}
+#sommaire ul li:before {
+    content: "=> ";
+}
+#sommaire ul ul li:before {
+    content: "\0BB \020 ";
+}
+
+.state {
+    display: inline-block;
+    width: 165px;
+
+    text-align: justify;
+    text-decoration: underline;
+}
+
+blockquote {
+    width: 75%;
+    margin-left: 15%;
+
+    padding: 10px 20px;
+    background-color: #F4F4F4;
+
+    border: 1px solid #CCC;
+    border-left-width: 8px;
+}
+pre {
+    margin: 0;
+}
+
+b {
+    color: #808;
+}
+
+#Glossaire blockquote {
+    width: 90%;
+    margin-left: 3%;
+}
+blockquote h2 {
+    margin: 0;
+    width: auto;
+
+    font-size: 1.1em;
+}
+
+@media print {
+    #body {
+        position: static;
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 11pt;
+    }
+    .page {
+        height: 100px;
+        page-break-before: always;
+    }
+    .state {
+        width: 148px;
+    }
+    .numerotation {
+        padding: 2pt 8.5pt 2pt 9pt;
+    }
+    .numerotation span:last-child {
+        padding-bottom: 2pt;
+    }
+}
