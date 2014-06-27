@@ -396,7 +396,7 @@
                         <h3 id='Bouchons_Suivi_Presentation'>Présentation</h3>
                             <p>Le bouchon décrit dans cette partie est destiné à remplacer une application de suivi de commande. La gestion des flux est ici totalement différente. Les flux passent par un appel à un WebService. Un WebService est une interface qui permet à deux applications de 'discuter' entres elles. Pour cela, le WebService met à la disposition d'applications externes des fonctionnalités que celle-ci peut appeler.</p>
                             <p>Le WebService est défini grâce à une fichier WSDL<a class='exposant' href='#WSDL'></a>, qui est en fait un fichier au format XML, qui permet d'informer quelles fonctions fournit le WebServices, quelles données ces fonctions prennent en entrées, et quelles données sont renvoyées en sortie. Cela permet à la personne qui va se servir du WebService de savoir quoi mettre dedans.</p>
-                            <p>C'est de cette manière qu'AECF fait appel à la société qui gère le tracking de ses colis. Elle envoi à expedito, grâce à une fonction dédié à cela, un flux avec des informations sur une commande, et expedito envoi en retour un flux avec des informations sur le tracking, comme le numéro, ou encore les liens vers leur site pour suivre directement le colis.</p>
+                            <p>C'est de cette manière qu'AECF fait appel à la société qui gère le tracking de ses colis. Elle envoi à l'application, grâce à une fonction dédié à cela, un flux avec des informations sur une commande, et l'application envoi en retour un flux avec des informations sur le tracking, comme le numéro, ou encore les liens vers leur site pour suivre directement le colis.</p>
 
                         <h3 id='Bouchons_Suivi_Developpement'>Développement</h3>
                             <p>Ce bouchon est un peu particulier, pour moi, de par sa conception. Je n'avais jamais vu ce type de service avant, et pourtant, les WebServices sont extrêmement pratique. Par exemple, ils permettent à une société A de fournir des fonctions qui vont chercher des informations dans leur base de données. Une société B pourra ensuite appeler cette fonction, sans savoir ce qu'il se passe dedans, et donc sans compromettre la sécurité de l'entreprise A, et ensuite utiliser les données renvoyées par la fonction.</p>
@@ -487,16 +487,19 @@
 
             <div class='page annexes'>
                 <h1 id='Annexes'>Annexes</h1>
-                    <p>IHM pour la génération de retour OP</p>
+                    <p>IHM pour la génération de retour OP (Notifications de commandes</p>
                     <img src='image/rop.png'>
 
-                    <p>IHM pour la génération de retour OP avancé</p>
+                    <p>IHM pour la génération de retour OP avancé (Notifications de commandes</p>
                     <img src='image/rop_a.png'>
             </div>
 
             <div class='page annexes'>
-                    <p>IHM pour la génération de flux Comarch</p>
+                    <p>IHM pour la génération de flux mouvement de stock (Notifications de commandes(bis))</p>
                     <img src='image/comarch_a.png'>
+
+                    <p>IHM de création de clients (Gestion de la fidélité client)</p>
+                    <img src='image/maxxing.png'>
             </div>
         </div>
 
