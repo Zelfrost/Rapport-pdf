@@ -326,6 +326,10 @@ blockquote h2 {
     font-size: 1.1em;
 }
 
+.annexes img {
+    width: 100%;
+}
+
 @media print {
     #body {
         position: static;
